@@ -1,11 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Paytone+One&display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        baloo: ['"Baloo Bhai 2"', "cursive"],
+                        paytone: ['"Paytone One"', "sans-serif"],
+                        dmsan: ['"DM Sans"', "sans-serif"],
+                        poppins: ['"Poppins"', 'sans-serif'],
+                    },
+                    colors: {
+                        clifford: "#da373d",
+                    },
+                    backgroundImage: {
+                        'custom-gradient': 'linear-gradient(94.53deg, rgba(252, 254, 255, 0.8) 25.16%, #FFFFFF 100.79%)',
+                        'custom-gradient2': 'linear-gradient(193.79deg, #FFFFFF 26.44%, rgba(255, 255, 255, 0.6) 91.68%)',
+                    },
+                },
+            },
+        };
+    </script>
+    <title>Tripp Travel Website</title>
 </head>
+
 <body>
-    
+    <header>
+        <!-- bg -->
+        <div class="bg-cover bg-no-repeat bg-top w-full h-screen bg-custom-gradient"
+            style="background-image: url(./image/header/BG.svg)">
+            <nav
+                class="flex flex-row justify-between items-center w-full h-[100px] max-sm:w-[327.45px] max-sm:h-[45px] ">
+                <div class="flex flex-row items-baseline relative left-[50px] ">
+                    <h1 class="font-baloo font-bold text-[38.4205px] leading-[62px] text-[#221314]">Tripp</h1>
+                    <span class="font-baloo font-bold text-[28.3303px] leading-[46px] text-[#FE5B3E]">.</span>
+                </div>
+                <div class="">
+                    <img src="./image/header/Menu.svg" alt="Menu Icon" class="lg:hidden relative left-[50px]">
+                    <div
+                        class="max-sm:hidden flex flex-row gap-10 font-dmsan font-normal font-medium text-[18px] leading-[23px] text-[#A8A8A8]">
+                        <a href="http://">HOME</a>
+                        <a href="http://">About</a>
+                        <a href="http://">Blog</a>
+                        <a href="http://">Tour package</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] rounded-[15px] w-[175px] h-[64px] max-sm:hidden flex justify-center ">
+                    <button
+                        class="font-dmsan font-normal font-bold text-[16px] leading-[21px] text-align text-white">Contact
+                        Us</button>
+                </div>
+            </nav>
+            <div class="flex flex-row-reverse justify-evenly items-center max-sm:flex-col">
+                <img src="./image/header/Img.svg" alt="img" class="lg:w-[500px] lg:h-[500px]" />
+                <div
+                    class="ml-6 w-[327px] h-[80px] font-paytone font-normal text-3xl leading-10 text-[#221314] lg:text-6xl lg:leading-[110px] ">
+                    <h1>Fuel Mind</h1>
+                    <h1>by Travel</h1>
+                    <div
+                        class="ml-6 w-[327px] h-[108px] font-dmsan font-normal text-[18px] leading-9 text-[#5A7184] lg:text-xl lg:leading-[40px]">
+                        <p>
+                            Enthusiastically extend extensive customer service before best breed
+                            convergence completely.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center lg:justify-end ">
+                <div
+                    class="w-[327px] h-[392px] bg-[#FFFFFF] rounded-[20px] shadow-xl mt-[120px] lg:mt-[90px] lg:w-[800px] lg:h-[100px]">
+                    <div class="flex flex-col lg:flex-row  items-center lg:justify-evenly gap-2  p-3 ">
+                        <div>
+                            <div class=" flex justify-center ">
+                                <p class="font-dmsan font-bold text-base leading-[21px] text-[#A8A8A8]">
+                                    Location
+                                </p>
+                                <img src="./image/header/fe_arrow-down.svg" alt="arrow-down" />
+                            </div>
+                            <div class="font-dmsan font-bold text-base leading-[21px] text-[#221314]">Cox’s Bazar
+                            </div>
+                        </div>
+                        <div class="w-0 h-[37px] opacity-20 border border-[#221314] rotate-90 lg:rotate-0"></div>
+                        <div>
+                            <div class=" flex justify-center">
+                                <p class="font-dmsan font-bold text-base leading-[21px] text-[#A8A8A8]">
+                                    Date
+                                </p>
+                                <img src="./image/header/fe_arrow-down.svg" alt="arrow-down" />
+                            </div>
+                            <div class="font-dmsans font-bold text-base leading-[21px] text-[#221314]">Mon, 14 Mar -
+                                Thu,
+                                17
+                                Mar
+                            </div>
+                        </div>
+                        <div class="w-0 h-[37px] opacity-20 border border-[#221314]  rotate-90 lg:rotate-0"></div>
+                        <div>
+                            <div class=" flex justify-center ">
+                                <p class="font-dmsan font-bold text-base leading-[21px] text-[#A8A8A8]">
+                                    Avg. Price
+                                </p>
+                                <img src="./image/header/fe_arrow-down.svg" alt="arrow-down" />
+                            </div>
+                            <div class="font-dmsan font-bold text-base leading-[21px] text-[#221314]">$300 - $600
+                            </div>
+                        </div>
+                        <button class=" w-[177px] h-[70px] bg-gradient-to-t from-[#FE5B3E] to-[#FE7B49] rounded-[15px]
+                                    font-bold text-white font-dmsan justify-self-end flex justify-center items-center
+                                    gap-4">
+                            Explore<img src="./image/header/bi_arrow-left.svg" alt="arrow-left" />
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <!-- Section 2 services  bg-slate-100-->
+        <div class=" w-[375px] h-[533px] p-4 m-5 mt-[280px] lg:mt-[100px] ">
+            <div class="flex flew-row justify-between items-center lg:w-[1000px] lg:h-[150px] lg:ml-40 ">
+                <div class="mb-5"> <!-- start -->
+                    <h1 class="font-poppins font-bold lg:text-5xl text-2xl leading-[34px] text-[#221314] ">Start Your
+                        Vaction</h1>
+                    <h1 class="font-poppins font-bold lg:text-5xl text-2xl leading-[34px] text-[#221314] ">with Lost of
+                        Services!</h1>
+                </div>
+                <div class="flex flex-row gap-2 ">
+                    <p class="font-dmsan font-bold text-lg leading-[23px] text-right text-[#FE5B3E]">
+                        View All Services
+                    </p>
+                    <img class="w-[24px] h-[24px] " src="./image/header/bi_arrow-left-green.svg" alt="arrow-left-green">
+                </div>
+            </div>
+            <div class="flex lg:flex-row flex-col lg:w-[1300px] lg:gap-5  items-center lg:ml-40"> <!-- 4 block -->
+                <div
+                    class="flex flex-col items-center justify-center gap-4 w-[332.5px] h-[272px] bg-white border border-[#F0EDED] rounded-[20px]">
+                    <!-- fam -->
+                    <div
+                        class="w-[80px] h-[80px] bg-[rgba(254,91,62,0.1)] rounded-[20px] flex items-center justify-center">
+                        <img src="./image/services/family (2) 1.svg" alt="family vacations" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h1
+                            class="font-poppins font-semibold lg:text-2xl text-xl leading-[32px] text-center tracking-[0.2px] text-[#221314]">
+                            Family Vacations
+                        </h1>
+                    </div>
+                    <div>
+                        <p
+                            class="font-dmsan font-normal lg:text-lg text-base leading-[28px] text-center text-[#5A7184]">
+                            155 Properties
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center gap-4 max-sm:hidden w-[332.5px] h-[272px] bg-white border border-[#F0EDED] rounded-[20px]">
+                    <!-- scuba -->
+                    <div
+                        class="w-[80px] h-[80px] bg-[rgba(254,91,62,0.1)] rounded-[20px] flex items-center justify-center">
+                        <img src="./image/services/Group 8328.svg" alt="Scuba Diving" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h1
+                            class="font-poppins font-semibold lg:text-2xl text-xl leading-[32px] text-center tracking-[0.2px] text-[#221314]">
+                            Scuba Diving
+                        </h1>
+                    </div>
+                    <div>
+                        <p
+                            class="font-dmsan font-normal lg:text-lg text-base leading-[28px] text-center text-[#5A7184]">
+                            143 Properties
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center gap-4 max-sm:hidden w-[332.5px] h-[272px] bg-white border border-[#F0EDED] rounded-[20px]">
+                    <!-- hunting-->
+                    <div
+                        class="w-[80px] h-[80px] bg-[rgba(254,91,62,0.1)] rounded-[20px] flex items-center justify-center">
+                        <img src="./image/services/Group 8318.svg" alt="Hunting trip" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h1
+                            class="font-poppins font-semibold lg:text-2xl text-xl leading-[32px] text-center tracking-[0.2px] text-[#221314]">
+                            Hunting Trip
+                        </h1>
+                    </div>
+                    <div>
+                        <p
+                            class="font-dmsan font-normal lg:text-lg text-base leading-[28px] text-center text-[#5A7184]">
+                            122 Properties
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center gap-4 max-sm:hidden w-[332.5px] h-[272px] bg-white border border-[#F0EDED] rounded-[20px]">
+                    <!-- moutain-->
+                    <div
+                        class="w-[80px] h-[80px] bg-[rgba(254,91,62,0.1)] rounded-[20px] flex items-center justify-center">
+                        <img src="./image/services/Group 8327.svg" alt="Moutain Bike" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h1
+                            class="font-poppins font-semibold lg:text-2xl text-xl leading-[32px] text-center tracking-[0.2px] text-[#221314]">
+                            Mountain Bike
+                        </h1>
+                    </div>
+                    <div>
+                        <p
+                            class="font-dmsan font-normal lg:text-lg text-base leading-[28px] text-center text-[#5A7184]">
+                            185 Properties
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <!-- Section 3 Packages -->
+        <div class="w-[375px] h-[533px] mt-[50px]  ">
+            <div class="flex flex-col  max-sm:ml-5">
+                <div class="flex flex-col  gap-1 lg:gap-5 lg:w-[1500px] mb-10 lg:mb-[60px]">
+                    <h1 class="font-poppins font-bold lg:text-[48px] text-xl leading-[34px] text-center text-[#221314]">
+                        Our Upcoming
+                    </h1>
+                    <h1
+                        class="font-poppins font-bold lg:text-[48px]  text-xl leading-[34px] text-center text-[#221314]">
+                        Tour Package
+                    </h1>
+                </div>
+                <div class="flex lg:flex-row lg:justify-center lg:gap-4 lg:w-[1500px] ">
+                    <!-- eiffel -->
+                    <div class="">
+                        <div
+                            class="w-[375px] h-[533px] lg:w-[450px] lg:h-[520px]  bg-gradient-to-r from-[#C4C4C4] to-[#C4C4C4] via-[#DED7D7] rounded-[20px]">
+                            <p
+                                class="font-poppins font-semibold text-xl lg:text-3xl leading-[32px] text-right text-white relative top-[20px] right-[20px] lg:top-[40px] lg:right-[40px]">
+                                $599
+                            </p>
+                        </div>
+                        <div class="flex lg:flex-row lg:gap-5 lg:mt-5 relative  ">
+                            <img src="./image/packages/Location.svg" alt="Location" class="w-[24px] h-[24px]">
+                            <div>
+                                <h1
+                                    class="font-poppins font-semibold text-xl lg:text-2xl leading-[32px] tracking-[0.2px] text-[#221314]">
+                                    Eiffel
+                                    Tower</h1>
+                                <p class="font-dmsan font-normal text-base lg:text-xl leading-[28px] text-[#5A7184]">
+                                    5d - 4n</p>
+                            </div>
+                            <img src="./image/packages/Group 8342.svg" alt="Star service"
+                                class="absolute left-[250px] lg:left-[310px] top-[20px] ">
+                        </div>
+                    </div>
+                    <!-- big bear -->
+                    <div class="max-sm:hidden lg:relative lg:bottom-[30px]">
+                        <div class="">
+                            <div
+                                class="w-[375px] h-[533px] lg:w-[450px] lg:h-[520px] bg-gradient-to-r from-[#C4C4C4] to-[#C4C4C4] via-[#DED7D7] rounded-[20px]">
+                                <p
+                                    class="font-poppins font-semibold lg:text-3xl text-xl leading-[32px] text-right text-white relative top-[20px] right-[20px] lg:top-[40px] lg:right-[40px]">
+                                    $480
+                                </p>
+                            </div>
+                            <div class="flex flex-col lg:flex-row lg:gap-5 lg:mt-5 relative  ">
+                                <img src="./image/packages/Location.svg" alt="Location" class="w-[24px] h-[24px]">
+                                <div>
+                                    <h1
+                                        class="font-poppins font-semibold text-xl lg:text-2xl leading-[32px] tracking-[0.2px] text-[#221314]">
+                                        Big Bear Lake
+                                    </h1>
+                                    <p
+                                        class="font-dmsan font-normal text-base lg:text-xl leading-[28px] text-[#5A7184]">
+                                        5d - 4n
+                                    </p>
+                                </div>
+                                <img src="./image/packages/Group 8342.svg" alt="Star service"
+                                    class="absolute left-[250px]  lg:left-[310px]">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- colorado-->
+                    <div class="max-sm:hidden ">
+                        <div
+                            class=" w-[375px] h-[533px] lg:w-[450px] lg:h-[520px] bg-gradient-to-r from-[#C4C4C4] to-[#C4C4C4] via-[#DED7D7] rounded-[20px]">
+                            <p
+                                class="font-poppins font-semibold lg:text-3xl text-xl leading-[32px] text-right text-white relative top-[20px] right-[20px] lg:top-[40px] lg:right-[40px]">
+                                $550
+                            </p>
+                        </div>
+                        <div class="flex flex-col lg:flex-row lg:gap-5 lg:mt-5 relative   ">
+                            <img src="./image/packages/Location.svg" alt="Location" class="w-[24px] h-[24px]">
+                            <div>
+                                <h1
+                                    class="font-poppins font-semibold text-xl lg:text-2xl leading-[32px] tracking-[0.2px] text-[#221314]">
+                                    Colorado Springs
+                                </h1>
+                                <p class="font-dmsan font-normal text-base lg:text-xl leading-[28px] text-[#5A7184]">
+                                    5d - 4n
+                                </p>
+                            </div>
+                            <img src="./image/packages/Group 8342.svg" alt="Star service"
+                                class="absolute left-[250px] top-[20px] lg:left-[310px]">
+                        </div>
+                    </div>
+                </div>
+                <div class="relative left-[100px] lg:left-[680px]">
+                    <button
+                        class="w-[180px] h-[70px] bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] rounded-[15px] font-dmsan font-bold text-[16px] leading-[21px] text-white flex flex-row justify-center items-center gap-2">
+                        <div>
+                            ViewAll
+                        </div>
+                        <div>
+                            <img src="./image/packages/bi_arrow-right-white.svg" alt="arrow-right" class="">
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4 Destination -->
+        <div
+            class="flex flex-col lg:w-full items-center justify-center w-[375px] h-[1094px] lg:h-[888px] bg-[#FEF9F3] mt-[350px] p-4">
+            <div class="flex flex-col lg:flex-row lg:gap-3 items-center">
+                <div class="flex flex-col items-start lg:gap-10 lg:order-2 lg:relative lg:bottom-[50px] ">
+                    <h1
+                        class="font-poppins not-italic font-bold text-[24px] lg:text-[48px] leading-[34px] text-[#221314] text-left">
+                        Most Popular</h1>
+                    <h1
+                        class="font-poppins not-italic font-bold text-[24px] lg:text-[48px] leading-[34px] text-[#221314] text-left">
+                        Destination of Us!</h1>
+                    <p
+                        class="lg:hidden font-dmsan not-italic font-normal text-[18px] leading-[40px] text-[#625858] text-left">
+                        Credibly unleash economically sound<br> e-business with bleeding-edge users.<br> Uniquely
+                        simplify mission-critical<br> benefits with cross-unit manufactured products. Energistically
+                        re-engineer </p>
+                    <p
+                        class="lg:w-[450px] max-sm:hidden font-dmsan not-italic font-normal text-[18px] leading-[40px] text-[#625858] text-left">
+                        <span class="">Credibly unleash economically sound e-business with</span>
+                        <span class="">bleeding-edge users. Uniquely simplify mission-critical benefits with</span>
+                        <span class="">cross-unit manufactured products. Energistically re-engineer</span>
+                </div>
+
+                <div class="flex lg:flex-row lg:order-1 lg:gap-5 ">
+                    <!-- wall china -->
+                    <div
+                        class="flex relative lg:right-[120px] w-[327px] h-[450px] bg-[#DED7D7] bg-gradient-to-t from-[#C4C4C4] to-[#C4C4C4] rounded-[20px]">
+                        <div class="absolute top-[360px] left-[30px]">
+                            <h2 class="font-poppins not-italic font-semibold text-[20px] leading-[32px] text-white">
+                                Great Wall of China</h2>
+                        </div>
+                        <div class="absolute top-[390px] left-[30px]">
+                            <p class="font-dmsan not-italic font-normal text-[18px] leading-[28px] text-[#EAEAEA]">
+                                Beijing, China</p>
+                        </div>
+                        <div class="absolute top-[375px] left-[240px]">
+                            <h3 class="font-poppins font-normal font-semibold text-[18px] leading-[28px] text-white">4.8
+                            </h3>
+                        </div>
+                        <div class="absolute top-[380px] left-[280px]">
+                            <img src="./image/destination/Star.svg" alt="star service">
+                        </div>
+                    </div>
+
+                    <!-- lake powell -->
+                    <div
+                        class="max-sm:hidden  flex relative lg:right-[120px] lg:bottom-[20px] w-[327px] h-[450px] bg-[#DED7D7] bg-gradient-to-t from-[#C4C4C4] to-[#C4C4C4] rounded-[20px]">
+                        <div class="absolute top-[360px] left-[30px]">
+                            <h2 class="font-poppins not-italic font-semibold text-[20px] leading-[32px] text-white">
+                                Lake Powell</h2>
+                        </div>
+                        <div class="absolute top-[390px] left-[30px]">
+                            <p class="font-dmsan not-italic font-normal text-[18px] leading-[28px] text-[#EAEAEA]">
+                                USA</p>
+                        </div>
+                        <div class="absolute top-[375px] left-[240px]">
+                            <h3 class="font-poppins font-normal font-semibold text-[18px] leading-[28px] text-white">4.8
+                            </h3>
+                        </div>
+                        <div class="absolute top-[380px] left-[280px]">
+                            <img src="./image/destination/Star.svg" alt="star service">
+                        </div>
+                    </div>
+                    <!-- deep creek -->
+                    <div
+                        class="max-sm:hidden flex relative lg:right-[120px] w-[327px] h-[450px] bg-[#DED7D7] bg-gradient-to-t from-[#C4C4C4] to-[#C4C4C4] rounded-[20px]">
+                        <div class="absolute top-[360px] left-[30px]">
+                            <h2 class="font-poppins not-italic font-semibold text-[20px] leading-[32px] text-white">
+                                Deep Creek Lake</h2>
+                        </div>
+                        <div class="absolute top-[390px] left-[30px]">
+                            <p class="font-dmsan not-italic font-normal text-[18px] leading-[28px] text-[#EAEAEA]">
+                                Maryland</p>
+                        </div>
+                        <div class="absolute top-[375px] left-[240px]">
+                            <h3 class="font-poppins font-normal font-semibold text-[18px] leading-[28px] text-white">4.8
+                            </h3>
+                        </div>
+                        <div class="absolute top-[380px] left-[280px]">
+                            <img src="./image/destination/Star.svg" alt="star service">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:hidden flex flex-row mt-[30px] gap-2">
+                <div><img src="./image/destination/Ellipse 982.svg" alt="Ellipse"></div>
+                <div><img src="./image/destination/Group 1535.svg" alt="Group"></div>
+                <div><img src="./image/destination/Ellipse 982.svg" alt="Ellipse"></div>
+            </div>
+            <div class="mt-4 lg:order-3">
+                <button
+                    class="w-[180px] h-[70px] bg-gradient-to-b from-[#FE5B3E] to-[#FE7B49] rounded-[15px] font-dmsan font-bold text-[16px] leading-[21px] text-white flex flex-row justify-center items-center gap-2">
+                    <div>
+                        ViewAll
+                    </div>
+                    <div>
+                        <img src="./image/packages/bi_arrow-right-white.svg" alt="arrow-right" class="">
+                    </div>
+                </button>
+            </div>
+            <div class="max-sm:hidden flex flex-row relative right-[350px]  gap-5">
+                <div><img src="./image/destination/bi_arrow-left.svg" alt="arrow-left" class="relative top-[8px]"></div>
+                <div><img src="./image/destination/bi_arrow-right.svg" alt="arrow-righ"></div>
+            </div>
+
+        </div>
+
+        <!-- Section 5 Testimonial -->
+        <div
+            class="flex flex-col lg:flex-row lg:items-center items-center lg:gap-20 w-[351.66px] h-[894.53px] mt-[150px] w-full ">
+            <div>
+                <img src="./image/testimonial/Img.svg" alt="" class="lg:w-[632px] lg:h-[736px]">
+            </div>
+            <div>
+                <div class="mt-[15px] ">
+                    <h1
+                        class="font-poppins not-italic font-bold text-[24px] lg:text-[48px] leading-[34px] text-[#221314] lg:mb-5">
+                        Feedback from </h1>
+                    <h1
+                        class="font-poppins not-italic font-bold text-[24px] lg:text-[48px] leading-[34px] text-[#221314]">
+                        Our Customers</h1>
+                </div>
+                <div class="mt-[15px] lg:w-[571px] lg:h-[192px]">
+                    <h3
+                        class="font-poppins not-italic font-semibold text-[20px] lg:[text-24px] leading-[40px] tracking-[0.2px]  text-[#221314]">
+
+                        <span class="lg:hidden block">“I’ve Went ot America from</span>
+                        <span class="lg:hidden block">Tripp Play about 1 years ago.</span>
+                        <span class="lg:hidden block">Tripp make the prototyping</span>
+                        <span class="lg:hidden block">process so easy and faster. I</span>
+                        <span class="lg:hidden block">feel this is the best apps for</span>
+                        <span class="lg:hidden block">Prototyping use"</span>
+
+                        <span class="max-sm:hidden block">“I’ve Went ot America from Tripp Play about 1</span>
+                        <span class="max-sm:hidden block">years ago. Tripp make the prototyping</span>
+                        <span class="max-sm:hidden block">process so easy and faster. I feel this is the</span>
+                        <span class="max-sm:hidden block"> best apps for Prototyping use"</span>
+                    </h3>
+
+                </div>
+                <div class="mt-[15px] lg:mt-[1px]">
+                    <p class="font-dmsan not-italic font-normal text-[18px] leading-[23px] text-[#5A7184]">—
+                        Ferdous - CEO of Coco</p>
+                </div>
+                <div class="mt-[15px]">
+                    <img src="./image/testimonial/Group 8295.svg" alt="next/previeus page">
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 6 Places -->
+        <div class="flex flex-col ">
+            <div>
+                <h1 class="font-poppins not-italic font-bold text-[24px] leading-[34px] text-center text-[#221314]">
+                    World Top Visiting<br>
+                    Place in 2021</h1>
+            </div>
+            <div class="mt-[20px] ">
+                <div class="relative w-full h-screen bg-contain bg-no-repeat "
+                    style="background-image:url(./image/places/Map.svg)">
+                    <div class="flex flex-col absolute left-[40px] top-[65px] lg:left-[230px] lg:top-[330px]">
+                        <img src="./image/places/Group 8289.svg" alt="Mexico" class="lg:w-[120px] lg:h-[120px]">
+                        <h2
+                            class="max-sm:hidden font-poppins font-normal font-semibold text-2xl leading-8 text-center tracking-wide text-[#221314]">
+                            Mexico</h2>
+                        <p class="max-sm:hidden font-dmsan font-normal text-base leading-7 text-center text-[#5A7184]">
+                            03 Tour</p>
+                    </div>
+                    <div class="flex flex-col absolute left-[180px] top-[45px] lg:left-[650px] lg:top-[200px]">
+                        <img src="./image/places/Group 8281.svg" alt="France" class="lg:w-[120px] lg:h-[120px]">
+                        <h2
+                            class="max-sm:hidden font-poppins font-normal font-semibold text-2xl leading-8 text-center tracking-wide text-[#221314]">
+                            France</h2>
+                        <p class="max-sm:hidden font-dmsan font-normal text-base leading-7 text-center text-[#5A7184]">
+                            03 Tour</p>
+                    </div>
+                    <div class="flex flex-col absolute left-[330px] top-[130px] lg:left-[1200px] lg:top-[500px]">
+                        <img src="./image/places/Group 8287.svg" alt="Australia" class="lg:w-[120px] lg:h-[120px]">
+                        <h2
+                            class="max-sm:hidden font-poppins font-normal font-semibold text-2xl leading-8 text-center tracking-wide text-[#221314]">
+                            Australia</h2>
+                        <p class="max-sm:hidden font-dmsan font-normal text-base leading-7 text-center text-[#5A7184]">
+                            02 Tour</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="w-full h-screen bg-no-repeat bg-contain bg-top bg-custom-gradient2 "
+            style="background-image: url(./image/footer/Group\ 8308.svg);">
+            <div class="flex flex-col lg:items-start mt-[200px] lg:gap-10 lg:ml-[70px] relative  lg:top-[170px] ">
+                <div
+                    class="font-poppins font-bold text-[30px] lg:text-[48px] leading-[40px] lg:leading-[68px] text-[#221314] ">
+                    <h1>Subscribe</h1>
+                    <h1>for every Tour</h1>
+                    <h1>News & Tips</h1>
+                </div>
+                <div
+                    class="flex flex-row bg-white shadow-custom rounded-2xl h-[100px] w-[355px] lg:w-[600px] items-center justify-center lg:justify-evenly ">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email"
+                        class="font-dmsan font-medium text-sm leading-5 text-[#A8A8A8] relative lg:right-[100px] max-sm:hidden">
+                    <input type="email" id="email" name="email" placeholder="Your Email"
+                        class="font-dmsan font-medium text-sm leading-5 text-[#A8A8A8] relative lg:right-[100px] lg:hidden">
+                    <div class="rounded-lg w-[160px] h-[70px]  flex flex-row items-center gap-2 justify-center"
+                        style="background: linear-gradient(180deg, #FE5B3E 0%, #FE7B49 100%);">
+                        <button
+                            class="font-dmsan font-[16px] font-bold text-base leading-5 text-center text-white">Subscribe
+                        </button>
+                        <div>
+                            <img src="./image/footer/bi_arrow-left.svg" alt="arrow-left">
+                        </div>
+                    </div>
+                </div>
+                <!-- ปัจจุบันถึงตรงนี้ -->
+                <div class="flex flex-col gap-2 ">
+                    <div class="flex flex-row items-end">
+                        <h1 class="font-baloo font-bold  text-[38.4205px] leading-[62px] text-[#221314]">Tripp</h1>
+                        <span
+                            class="font-baloo  font-bold text-[28.3303px] lg:text-[38.42px] leading-[46px] text-[#FE5B3E]">.</span>
+                    </div>
+                    <div class="flex flex-col lg:flex-row gap-5">
+                        <div class="font-dmsan font-medium text-[18px] leading-[28px] text-[#221314] lg:w-[300px]">
+                            Copyright©Tripp.All right reserved
+                        </div>
+                        <div class="flex flex-row gap-2 lg:gap-4 relative lg:left-[250px]">
+                            <div>
+                                <img src="./image/footer/google.svg" alt="link google">
+                            </div>
+                            <div>
+                                <img src="./image/footer/tw.svg" alt="link twitter">
+                            </div>
+                            <div>
+                                <img src="./image/footer/ig.svg" alt="Instargram">
+                            </div>
+                            <div>
+                                <img src="./image/footer/in.svg" alt="Linkined">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
